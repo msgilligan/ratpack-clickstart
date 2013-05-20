@@ -1,0 +1,24 @@
+{
+    "id": "ratpack-clickstart",
+    "name": "Ratpack groovy and gradle",
+    "source": "github",
+    "description" : "The ratpack framework",    
+
+    "supported-by" : "community",
+    "order" : 20,
+
+    "runtime": {
+        "type": "procfile",
+         "app-parameters" : { 
+            "runtime.PLUGIN.SRC.golang": "https://s3.amazonaws.com/clickstacks/admin/procfile-plugin-0.1.1.zip"
+        }    
+    },
+
+    "build-with-jenkins": {
+	"template": {
+            "type": "https://raw.github.com/michaelneale/ratpack-clickstart/master/jenkins.xml",
+            "options": {
+            }            
+        }
+    }
+}
